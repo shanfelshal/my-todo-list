@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  background-color: #f0f3f8;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-section {
+  background: #4a54f1;
+  color: white;
+  padding: 60px 30px 100px 30px;
+}
+
+.header-section h1 { margin: 0; font-size: 32px; }
+.header-section p { opacity: 0.8; margin: 5px 0 0 0; }
+
+.content-body {
+  padding: 0 20px;
+  margin-top: -50px; /* Картка "наповзає" на синій фон */
+}
+
+.input-card {
+  background: white;
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.main-input {
+  border: none;
+  border-bottom: 2px solid #f1f2f6;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  outline: none; /* Жодних рамок при фокусі */
+}
+
+.input-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.date-input {
+  border: none;
+  font-family: inherit;
+  color: #888;
+  outline: none;
+}
+
+button {
+  border: none !important;
+  outline: none !important;
+  cursor: pointer;
+}
+
+.btn-add {
+  background: #4a54f1;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.todo-item {
+  background: white;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  border-left: 6px solid #4a54f1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.todo-info { flex-grow: 1; margin-left: 15px; }
+.todo-text { font-weight: 600; color: #2d3436; font-size: 16px; }
+.todo-dates { display: flex; gap: 15px; font-size: 11px; color: #888; margin-top: 4px; }
+.deadline-text { color: #ff4757; font-weight: 600; }
+
+.btn-edit { background: none; color: #4a54f1; font-weight: 600; margin-left: 10px; }
+.btn-delete { background: none; color: #ff4757; font-weight: 600; margin-left: 10px; }
+
+.completed { opacity: 0.6; border-left-color: #d1d8e0; }
+.completed .todo-text { text-decoration: line-through; }
